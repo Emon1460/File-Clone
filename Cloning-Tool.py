@@ -341,10 +341,10 @@ logo =(""" \33[1;91m
 \33[1;91m╔════════════════════════════════════════╗
 \33[1;92m║[•] Author    : MD EMON ALI      ║
 \33[1;92m║[•] Whatsapp  : +***********            ║
-\33[1;92m║[•] Github    : Emon1460                 ║
+\33[1;92m║[•] Github    : Tore Bolbo Kn                 ║
 \33[1;92m║[•] Status    : TRIAL                   ║
 \33[1;92m║[•] Network   : Data / WIFI  Work      ║
-\33[1;92m║[•] Version   : UPDATE                  ║
+\33[1;92m║[•] Version   : 10.1                  ║
 \33[1;92m║[•] Tools     : EDUCATION PERPOSE     ║
 \33[1;91m╚════════════════════════════════════════╝""")
 
@@ -778,10 +778,10 @@ def crack(idf,pwv):
                      'strict-transport-security': 'max-age=15552000; preload',
                      'pragma': 'no-cache',
                      'cache-control': 'private, no-cache, no-store, must-revalidate',
-                     'x-fb-request-id': 'AGAb1r5gST5f28zghRUGGlI',
-                     'x-fb-trace-id': 'BxuXlSKY1W9',
-                     'x-fb-rev': '1008295290',
-                     'x-fb-debug': '8e3oC8c55BGj3V1DOvQ0T3rsDRCPe0nNssVFSnLirvR2mN7qOfgNEz0FkqKjNG8eSp00BtdAG7W9pGwSURyhiA==','viewport-width': '980',
+                     'x-fb-request-id': 'AvOUoN_giaERbm73BpyzIMA',
+                     'x-fb-trace-id': 'Dv0YTCHBsHQ',
+                     'x-fb-rev': '1008376653',
+                     'x-fb-debug': 'SkalbXhqZaGFaeWZygwm3HdEfg3X7Natm42kkzGCN8WfzUf5I8UNjDD8JwAFBhH1Pm9HIoELjHIwMoDwymf7Kg==','viewport-width': '980',
                      'sec-ch-ua': '"Not A;Brand";v="24", "Chromium";v="116"',
                      'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"',
                      'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1',
